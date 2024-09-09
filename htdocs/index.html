@@ -5,13 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dewawa headquarters</title>
     <style>
-        .comic-sans {
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            animation: rainbowBackground 10s linear infinite;
+        }
+
+        @keyframes rainbowBackground {
+            0% { background-color: #FF0000; } /* Red */
+            14% { background-color: #FF7F00; } /* Orange */
+            28% { background-color: #FFFF00; } /* Yellow */
+            42% { background-color: #00FF00; } /* Green */
+            57% { background-color: #0000FF; } /* Blue */
+            71% { background-color: #4B0082; } /* Indigo */
+            85% { background-color: #9400D3; } /* Violet */
+            100% { background-color: #FF0000; } /* Back to Red */
+        }
+
+        .content {
+            text-align: center;
+            padding-top: 20%;
+            color: white;
             font-family: 'Comic Sans MS', cursive, sans-serif;
-            font-size: 212px; /* Adjust the size here */
+            font-size: 48px;
         }
     </style>
 </head>
 <body>
-    <p class="comic-sans">dewawa headquarters</p>
+    <div class="content">dewawa</div>
 </body>
 </html>
